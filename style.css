@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+    min-height: 100vh;
+    display: grid;
+    align-content: center;
+
+}
+
+.card-container {
+    position:relative;
+    background-color: white;
+    border-radius: 10px;
+    margin: 1rem;;
+    overflow: hidden;
+    max-width: 650px;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-content {
+    margin: 1.5rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.picture-reference {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 0.3em;
+}
+
+.card-title {
+    font-family:'Fraunces';
+    line-height: 1em;
+    margin-block: 0.5rem;
+    color: hsl(212, 21%, 14%);
+
+}
+
+.card-description {
+    font-family: 'Montserrat';
+    font-size: 13px;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    padding-right: 1.5rem;
+    line-height: 1.5em;
+}
+
+.price {
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-block:1rem;
+}
+
+.price-now {
+    font-family:'Fraunces';
+    color: hsl(158, 36%, 37%);
+    margin-right: 1.5rem;
+
+}
+
+.price-before {
+    font-family: 'Montserrat';
+    font-size: 12px;
+    color: hsl(228, 12%, 48%);
+    text-decoration-line: line-through;
+}
+
+button {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    color: white;
+    background-color: hsl(158, 36%, 37%);
+    outline: none;
+    border: none;
+    padding-block: 1em;
+    gap:0.7rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(158, 36%, 22%);
+}
+
+img.cart {
+    width: 15px;
+    height: 15px;
+}
+
+@media (min-width: 500px){
+    .card-container{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    img{
+        height: 100%;
+    }
+    
+}
