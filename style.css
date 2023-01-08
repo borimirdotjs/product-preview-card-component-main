@@ -8,10 +8,9 @@
 
 body{
     background-color: hsl(30, 38%, 92%);
-    min-height: 100vh;
     display: grid;
-    align-content: center;
-
+    place-content: center;
+    min-height: 100vh;
 }
 
 .card-container {
